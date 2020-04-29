@@ -243,6 +243,10 @@ int main() {
               strcpy(currentDir, tmp);
             }
           }
+		  else
+		  {
+			  fprintf(stderr, "‫‪Error‬‬ ‫‪in‬‬ ‫‪system‬‬ ‫‪call\n");
+		  }
         }
         else if (strncmp((const char *) commandArgs[1], "~/", 2) == 0) {
           //cd ~/path
